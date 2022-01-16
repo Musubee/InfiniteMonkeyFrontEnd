@@ -1,27 +1,24 @@
-import React from "react";
-import { Grommet } from "grommet";
-import logo from "./logo.svg";
+import React, { Fragment } from "react";
+import { Box, Grommet, Header, Heading, Main } from "grommet";
+import { Gremlin } from "grommet-icons";
 import "./App.css";
+
+import About from "./components/About";
 
 function App() {
   return (
-    <Grommet plain>
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+    <Grommet plain full>
+      <Fragment>
+        <Box direction="column" pad="medium">
+          <Header>
+            <Gremlin size="large" />
+            <Heading>Infinite Monkey Simulation</Heading>
+          </Header>
+          <Main>
+            <About />
+          </Main>
+        </Box>
+      </Fragment>
     </Grommet>
   );
 }
