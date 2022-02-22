@@ -4,6 +4,7 @@ import { Gremlin } from "grommet-icons";
 import "./App.css";
 
 import About from "./components/About";
+import CurrentSimulationState from "./components/CurrentSimulationState";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           </Header>
           <Main>
             <About />
+            <CurrentSimulationState generatedString="abcdef" characterCount="6" percentage="23%" workTitle="Alphabet"/>
           </Main>
         </Box>
       </Fragment>
